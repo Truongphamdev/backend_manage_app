@@ -161,8 +161,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # cho phép phát triển local
-    "https://frontend-manage-app.vercel.app",  # cho phép FE production
+    "https://frontend-manage-9xjyzwusv-truongphamdevs-projects.vercel.app",  # domain Vercel mới!
+    "http://localhost:3000",  # nếu cần test local
 ]
 # Nếu dùng fetch với credentials (cookies):
 CORS_ALLOW_CREDENTIALS = True
