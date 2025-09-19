@@ -162,3 +162,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CORS_ALLOWED_ORIGINS = [
+    "https://frontend-manage-app.vercel.app",
+]
+
+# Nếu dùng fetch với credentials (cookies):
+CORS_ALLOW_CREDENTIALS = True
+
+# Nếu muốn cho tất cả origin (không khuyến nghị cho production):
+# CORS_ALLOW_ALL_ORIGINS = True
