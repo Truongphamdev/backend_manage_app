@@ -28,7 +28,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ["backend-manage-app.onrender.com"]
+ALLOWED_HOSTS = ["backend-manage-app.onrender.com", "localhost"]
 
 
 # Application definition
@@ -59,9 +59,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
+
 ROOT_URLCONF = 'backend.urls'
 # Cấu hình Cloudinary
 
@@ -163,9 +161,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "https://frontend-manage-app.vercel.app",
+    "http://localhost:3000",  # cho phép phát triển local
+    "https://frontend-manage-app.vercel.app",  # cho phép FE production
 ]
-
 # Nếu dùng fetch với credentials (cookies):
 CORS_ALLOW_CREDENTIALS = True
 
