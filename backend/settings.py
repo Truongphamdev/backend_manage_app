@@ -161,6 +161,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
+    "https://frontend-manage-app.vercel.app"
     "https://frontend-manage-9xjyzwusv-truongphamdevs-projects.vercel.app",  # domain Vercel mới!
     "http://localhost:3000",  # nếu cần test local
 ]
